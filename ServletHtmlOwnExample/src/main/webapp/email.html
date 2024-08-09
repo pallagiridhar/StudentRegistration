@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           background-image: url('images/std4.jpg');;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To Student Registration</h1>
+        
+        <form action="stdreg" method="post">
+            <table>
+                <tr>
+                    <td>Student First Name:</td>
+                    <td><input type="text" id="tbName" name="tbName" required="required" /></td>
+                </tr>
+                <tr>
+                    <td>Student Second Name:</td>
+                    <td><input type="text" id="tbName1" name="tbName1" required="required" /></td>
+                </tr>
+                <tr>
+                    <td>Student Father Name:</td>
+                    <td><input type="text" id="tbFname" name="tbFname" required="required" /></td>
+                </tr>
+                <tr>
+                    <td>Enter Email:</td>
+                    <td><input type="email" id="tbEmail" name="tbEmail" required="required" /></td>
+                </tr>
+                <tr>
+                    <td>Create Password:</td>
+                    <td><input type="password" id="tbPass" name="tbPass" required="required" /></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td><input type="password" id="tbPass1" name="tbPass1" required="required" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" id="tbSub" name="tbSub" value="Register" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
